@@ -485,7 +485,6 @@ class WordPressClient(object): #{{{
         """Get blog's categories list
         """
         try:
-            print "self.categories: %s" % (self.categories,)
             if self.categories == None or forceUpdate == True:
                 self.categories = []
                 categories = self._server.wp.getCategories(self.blogId, 
